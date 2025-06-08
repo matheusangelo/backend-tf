@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket  = var.bucket_name
-    key     = var.key_state
-    region  = var.region
-    profile = var.profile
+    bucket  = "backend_terraform"
+    key     = "tfstate.out"
+    region  = "us-east-1"
+    profile = "test"
   }
 }
